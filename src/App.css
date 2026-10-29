@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: rgb(245, 245, 255)
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #38bdf8;
+  outline-offset: 2px;
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding-bottom: 48px;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.font-bold {
+  display: block;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.logo-description {
+  margin: 0.15rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgb(100, 116, 139);
+}
+
+.dashboard {
+  max-width: 1280px;
+  padding: 24px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(270px, 1fr);
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #f1f5f9;
+  border-radius: 17px;
+  padding: 24px;
+  box-shadow: 0 2px 5px #0f172a05;
+  min-width: 0;
+}
+
+.user-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  display: block;
+
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.avatar-wrap {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.student-name {
+  margin: 0;
+  color: #1e293b;
+  font-size: 24px;
+  letter-spacing: -.6px;
+}
+
+.muted {
+  color: #64748b;
+}
+
+.student-subtitle {
+  margin: 5px 0 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+input,
+select,
+textarea {
+  min-width: 0;
+  color: #334155;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 11px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #94a3b8;
+}
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.button {
+  border: 0;
+  border-radius: 9px;
+  padding: 9px 13px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  transition: background .18s, transform .18s;
+  white-space: nowrap;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.blue-button {
+  color: #fff;
+  background: #0ea5e9;
+}
+
+.blue-button:hover {
+  background: #0284c7;
+}
