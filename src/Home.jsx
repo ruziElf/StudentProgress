@@ -41,15 +41,13 @@ export default function Home() {
                 {levelOptionsList}
               </select>
               <div className="form-actions">
-                <button type="submit" className="button blue-button">+ Add</button>
+                <button type="submit" className="button blue-button" onClick = {() => alert("Saved")} >+ Add</button>
               </div>
             </div>
           </article>
         </section>
       </main>
     </div>
-
-
 
   );
 }
